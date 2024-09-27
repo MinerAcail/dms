@@ -1,0 +1,67 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+  }
+  
+  body {
+    background-image: linear-gradient(to right top, #ba80b1, #b685b7, #b189bd, #ad8ec2, #a892c6);
+    /* backgroundRepeat:"no-repeat",
+           */
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    background-size: "contain";
+    justify-content: center;
+    overflow-y: hidden;
+
+  }
+  
+  /* Font */
+  $Logofont: "Moul", cursive;
+  $Tfont: "Mogra", cursive;
+  $Sfont: "Molengo", sans-serif;
+  $Pfont: "Montaga", serif;
+  $Stylefont: "Moon Dance", cursive;
+  
+  // colors
+  $Bgcard: #4c78ec;
+  $boxcard: rgba(255, 255, 255, 0.374);
+  $Bar: rgb(192, 242, 249, 74%);
+  $Bluedot: rgb(0, 10, 255, 69%);
+  $Lightcolor: rgb(255, 255, 255);
+  $PLightcolor: rgba(241, 238, 238, 0.899);
+  $textcolor: #28203a;
+  $Stylecolor: #9d15f7;
+  
+  /* Styling */
+  $Cardradius: 18px;
+  $PCardradius: 6px;
+  
+  /* sizing */
+  $step--2: clamp(0.87rem, calc(0.74rem + 0.65vw), 1.2rem);
+  $step--1: clamp(1.04rem, calc(0.86rem + 0.89vw), 1.5rem);
+  $step-0: clamp(1.25rem, calc(1.01rem + 1.22vw), 1.88rem);
+  $step-1: clamp(1.5rem, calc(1.17rem + 1.65vw), 2.34rem);
+  $step-2: clamp(1.8rem, calc(1.36rem + 2.2vw), 2.93rem);
+  $step-3: clamp(2.16rem, calc(1.57rem + 2.93vw), 3.66rem);
+  $step-4: clamp(2.59rem, calc(1.82rem + 3.87vw), 4.58rem);
+  $step-5: clamp(3.11rem, calc(2.09rem + 5.1vw), 5.72rem);
+  
+  
+  @mixin _card {
+    overflow-y: auto;
+    padding: 30px;
+    margin-top: 20px;
+    background-color: #9a8ee8ec;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    // backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }

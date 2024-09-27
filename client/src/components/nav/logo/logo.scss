@@ -1,0 +1,18 @@
+@import "../../../assets/include.scss";
+@import "../../../App.scss";
+
+
+
+.logo {
+  color: $textcolor;
+  font-family: $Sfont;
+  font-weight: 700;
+  font-size: $step-0;
+  cursor: pointer;
+  padding: $step--1;
+  @include media('<=phone'){
+  padding: $step--2;
+
+
+  }
+}

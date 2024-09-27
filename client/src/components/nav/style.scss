@@ -1,0 +1,31 @@
+@import "../../assets/include.scss";
+@import "../../App.scss";
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    .links {
+      padding: $step--1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      .signed {
+        padding-inline-start: 20px;
+        color: rgb(224, 224, 224);
+        font-family: $Pfont;
+        font-size: $step--1;
+        margin: 0 10px;
+        background-color: rgba(240, 248, 255, 0);
+        cursor: pointer;
+  
+       /*  @include media("<=phone") {
+          padding: $step--2;
+        } */
+      }
+    }
+  }

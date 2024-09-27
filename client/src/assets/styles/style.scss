@@ -1,0 +1,70 @@
+@import "../../assets/include.scss";
+@import "../../App.scss";
+
+.app-container {
+ height: 100vh;
+
+  .main-container {
+    width: 100%;
+    height: 100%;
+    .section {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 94%;
+      height: 87%;
+      display: flex;
+      justify-content: center;
+      column-gap: 20px;
+
+      ._divSm,
+      ._divLg {
+        @include _card;
+      }
+      ._divSm {
+        // width: 40%;
+
+        padding: 20px;
+        margin-top: 20px;
+
+        .card {
+          @include _card;
+          background-color: #454452;
+          h2 {
+            color: #f3eeff;
+            font-family: Merriweather Sans;
+            font-size: 24px;
+          }
+          h3 {
+            color: #fff;
+            font-family: Merriweather Sans;
+            font-size: 17px;
+          }
+        }
+      }
+      ._divLg {
+        // width: 60%;
+
+      }
+    }
+  }
+}
+
+.logo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.logo {
+  max-width: 65%;
+  max-height: 65%;
+  // opacity: 0.6;
+}

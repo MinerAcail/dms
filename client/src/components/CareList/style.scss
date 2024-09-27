@@ -1,0 +1,40 @@
+.cantainer{
+
+    background-color: #c4c4c4a1;
+     border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    // backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+.checkbox {
+    width: 34px; /* Adjust the size as needed */
+    height: 34px; /* Adjust the size as needed */
+    border: 2px solid #333; /* Border color */
+    border-radius: 50%; /* Makes it circular */
+    appearance: none; /* Removes the default checkbox appearance */
+    outline: none; /* Removes the focus outline */
+    cursor: pointer; /* Change cursor on hover */
+    position: relative; /* Needed for the pseudo-element */
+  
+    /* Customize the background color when checked */
+  }
+  
+  /* Styling for the inner color when checked */
+  .checkbox:checked::before {
+    content: '';
+    width: 18px; /* Size of the inner color */
+    height: 18px; /* Size of the inner color */
+    background-color: #007bff; /* Inner color when checked */
+    border-radius: 50%; /* Makes the inner color circular */
+    position: absolute; /* Position it inside the checkbox */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center it precisely */
+  }
+  
+  /* Optional: Add a transition for a smoother appearance change */
+  .checkbox {
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  
